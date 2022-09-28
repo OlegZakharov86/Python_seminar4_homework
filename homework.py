@@ -6,12 +6,23 @@
 # Задача2
 #  Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 
-def simplemult(n):
-    list = []
-    for i in range(1, n+1):
-        if n % i == 0:
-            list.append(i)
-    print(list)
-print('введите целое число: ')
-n = int(input())
-simplemult(n)
+# def simplemult(n):
+#     list = []
+#     for i in range(1, n+1):
+#         if n % i == 0:
+#             list.append(i)
+#     print(list)
+# print('введите целое число: ')
+# n = int(input())
+# simplemult(n)
+
+# Задача3
+# Задайте последовательность чисел. Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
+
+def newList(list):
+    uniqueList = [i for i in list if list.count(i)==1]
+    print(uniqueList)
+  
+list = [2, 4, 5, 2, 4, 6, 5, 3]
+print(newList(list))
+
